@@ -1,0 +1,41 @@
+{
+    "request": {
+        "type": "City",
+        "query": "Amalner, India",
+        "language": "en",
+        "unit": "m"
+    },
+    "location": {
+        "name": "Amalner",
+        "country": "India",
+        "region": "Maharashtra",
+        "lat": "21.050",
+        "lon": "75.067",
+        "timezone_id": "Asia\/Kolkata",
+        "localtime": "2022-11-30 17:16",
+        "localtime_epoch": 1669828560,
+        "utc_offset": "5.50"
+    },
+    "current": {
+        "observation_time": "11:46 AM",
+        "temperature": 28,
+        "weather_code": 113,
+        "weather_icons": [
+            "https:\/\/cdn.worldweatheronline.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"
+        ],
+        "weather_descriptions": [
+            "Sunny"
+        ],
+        "wind_speed": 9,
+        "wind_degree": 151,
+        "wind_dir": "SSE",
+        "pressure": 1012,
+        "precip": 0,
+        "humidity": 36,
+        "cloudcover": 0,
+        "feelslike": 27,
+        "uv_index": 7,
+        "visibility": 10,
+        "is_day": "yes"
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons8-partly-cloudy-day-50.png" type="image/x-icon">
+    <title>WeatherNow</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="input">
+            <h1>Weather API</h1>
+            <form class="input-form" onsubmit="return false">
+                <div class="form-group" >
+                    <input type="text" class="form-control transperent" id="input-location" aria-describedby="emailHelp"
+                        placeholder="Location" onfocus="this.value=''">
+                </div>
+                <div class="form-group token" >
+                    <input type="text" class="form-control transperent" id="input-token" placeholder="Access Token" onfocus="this.value=''">
+                </div>
+                <button type="submit" class="btn btn-primary submit" onclick="intiateFetch()">Submit</button>
+            </form>
+        </div>
+        <div id="warning"></div>
+        <div>
+            <h2>Weather Data</h2> <span><h2 id="conditions"></h2></span>
+            <div class="result">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Location <span><img src="./icons8-wind-speed-less-1-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="location" style="font-size: 30px;"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Temperature <span><img src="./icons8-thermometer-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="temperature"></span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Feels Like <span><img src="./icons8-thermometer-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="feels-like"></span>
+                    </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lat <span><img src="./icons8-geography-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="lat"></span>
+                        <span>Long <span><img src="./icons8-geography-50.png" alt="therm"></span></span>
+                        <span class="badge badge-primary badge-pill" id="long"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        TimeZone <span><img src="./icons8-timezone-globe-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="TimeZone"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Wind Speed <span><img src="./icons8-windsock-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="windspeed"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Pressure <span><img src="./icons8-pressure-gauge-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="pressure"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Humidity <span><img src="./icons8-hygrometer-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="Humidity"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Wind Direction <span><img src="./icons8-wind-gauge-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="wind-direction"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        UV Index <span><img src="./icons8-marker-sun-50.png" alt="therm"></span>
+                        <span class="badge badge-primary badge-pill" id="UV"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
